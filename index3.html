@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinkit - Groceries in 10 Minutes</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">blink<span>it</span></div>
+
+        <div class="location">
+            <h3>Delivery in 10 minutes</h3>
+            <p>Meerut, Uttar Pradesh ▼</p>
+        </div>
+
+        <div class="search">
+            <span>🔍</span>
+            <input type="text" placeholder="Search for products...">
+        </div>
+
+        <button class="login">Login</button>
+        <button class="cart">🛒 My Cart</button>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Groceries delivered<br>in 10 minutes!</h1>
+            <p>Fresh fruits, vegetables and daily essentials at your doorstep.</p>
+            <button onclick="document.querySelector('.products').scrollIntoView()">
+                Shop Now →
+            </button>
+        </div>
+        <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-3_9.png
+             alt="Fresh groceries">
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <h2>Shop by Category</h2>
+
+        <div class="category-grid">
+            <div class="category">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-3_9.png alt="Fruits">
+                <p>Fruits and Vegetables</p>
+            </div>
+
+            <div class="category">
+                <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=250" alt="Vegetables">
+                <p>Vegetables</p>
+            </div>
+
+            <div class="category">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png alt="Dairy">
+                <p>Dairy</p>
+            </div>
+
+            <div class="category">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-5_4.png alt="Snacks">
+                <p>Snacks</p>
+            </div>
+
+            <div class="category">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-4_9.png alt="Drinks">
+                <p>Drinks</p>
+            </div>
+
+            <div class="category">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-18.png alt="Honey">
+                <p>Home and Office</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products">
+        <h2>Best Sellers</h2>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?w=300" alt="Milk">
+                <p class="time">⏱ 10 MINS</p>
+                <h3>Milk</h3>
+                <p class="quantity">500 ml</p>
+                <div class="price">
+                    <b>₹29</b>
+                    <button onclick="addToCart('Amul Taaza Milk',29)">ADD +</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/864e670d-115b-4b87-af6c-493fea8e1f3d.png alt="Orange">
+                <p class="time">⏱ 10 MINS</p>
+                <h3>Fresh Oranges</h3>
+                <p class="quantity">6 Pieces</p>
+                <div class="price">
+                    <b>₹40</b>
+                    <button onclick="addToCart('Fresh Oranges',40)">ADD +</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/rc-upload-1782812677911-682.png alt="Bread">
+                <p class="time">⏱ 10 MINS</p>
+                <h3>Fresh White Bread</h3>
+                <p class="quantity">400 g</p>
+                <div class="price">
+                    <b>₹35</b>
+                    <button onclick="addToCart('Fresh White Bread',35)">ADD +</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/1473f224-1d5f-4ae5-8402-623cbea0a846.png alt="Pineapple">
+                <p class="time">⏱ 10 MINS</p>
+                <h3>Fresh Pineapple</h3>
+                <p class="quantity">6 Pieces</p>
+                <div class="price">
+                    <b>₹45</b>
+                    <button onclick="addToCart('Fresh Pineapple',45)">ADD +</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/rc-upload-1776398906000-171.png alt="Chips">
+                <p class="time">⏱ 10 MINS</p>
+                <h3>Potato Chips</h3>
+                <p class="quantity">Pack of 1</p>
+                <div class="price">
+                    <b>₹20</b>
+                    <button onclick="addToCart('Potato Chips',20)">ADD +</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/0a7dd8d3-d7ef-4db4-b388-d5c8140e4474.png alt="Juice">
+                <p class="time">⏱ 10 MINS</p>
+                <h3>Fresh Orange Juice</h3>
+                <p class="quantity">1 Litre</p>
+                <div class="price">
+                    <b>₹99</b>
+                    <button onclick="addToCart('Orange Juice',99)">ADD +</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>blinkit</h2>
+        <p>Groceries delivered at your doorstep.</p>
+        <p>© 2026 Blinkit Clone | Made for learning purposes</p>
+    </footer>
+
+    <script>
+        let cartCount = 0;
+        let total = 0;
+
+        function addToCart(name, price) {
+            cartCount++;
+            total += price;
+
+            document.querySelector(".cart").innerText =
+                `🛒 Cart (${cartCount}) - ₹${total}`;
+
+            alert(name + " added to cart!");
+        }
+    </script>
+
+</body>
+</html>
